@@ -36,7 +36,7 @@ body {
 	font-family: monospace;
 	font-size: 1.125rem;
 	line-height: 1.2;
-	overflow-x: hidden;
+	overflow: hidden;
 	background-color: rgb(240, 226, 233);
 }
 
@@ -133,7 +133,7 @@ section.room {
 	perspective: 10em;
 	perspective-origin: 50% 50%;
 	overflow: hidden;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 }
 
  .start {
@@ -217,6 +217,64 @@ section.room {
 	left: -10em;
 	transform: translateZ(10em);
 }
+.item {
+	position: relative;
+}
+
+.bg {
+	filter: url('#filter');
+  background-color: #e2c3ff;
+  height: 12rem;
+  width: 8rem;
+  position: absolute;
+  z-index: 1;
+  left: 6em;
+  top: 2em;
+}
+
+.mob-test {
+
+}
+
+.mob {
+	position: relative;
+	z-index: 3;
+	transform: scale(1.2);
+}
+
+.carousel {
+	position: absolute;
+  top: 3em;
+  z-index: 2;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 8rem;
+  height: 20em;
+  left: 6em;
+  padding-top: 3rem;
+	
+}
+
+.mob-text {
+	filter: url('#noise');
+    display: inline-block;
+    padding-left: 130%;
+    animation: marquee 10s linear infinite;
+
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0) scale(5, 12); }
+    100% { transform: translate(-300%, 0) scale(5, 12); }
+}
+
+.window {
+	height: 40rem;
+	width: 30rem;
+	border: 1px solid blue;
+
+}
 
 .leftWall {
 	width: 250em;
@@ -262,9 +320,6 @@ section.room {
     transform: translateZ(-5em);
 }
 
-.floor:hover {
-	filter: blur(10px);
-}
 
 @media (min-width: 1140px) {
 /* … */
