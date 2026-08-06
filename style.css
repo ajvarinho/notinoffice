@@ -353,9 +353,12 @@ section.room {
 @media (max-width: 480px) {
 /* … */
 
-
 	.front-img > img {
 		transform: translateX(7%) translateY(5%) scale(2);
+	}
+
+	.wall {
+		border: 20px solid black;
 	}
 
 	.frontWall {
