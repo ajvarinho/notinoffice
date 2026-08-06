@@ -363,23 +363,30 @@ section.room {
 	}
 
 	.leftWall {
-		left: -172em;
+		left: -197em;
+		/**/
+		width: 297em;
+		height: 251em;
+		top: -91em;
 	}
 
 	.rightWall {
-		left: -76em;
+		left: -83em;
+		width: 250em;
+		height: 213em;
+		top: -79em;
 	}
 
 	.floor {
-		top: 25em;
-		left: -56rem;
-		width: 110em;
+		top: 10em;
+		left: -46rem;
+		width: 83em;
 	}
 
 	.ceiling {
-		top: -203em;
-		left: -47em;
+		top: -177em;
+		left: -42em;
 		height: 250em;
-		width: 105rem;
+		width: 94rem;
 	}
 }
