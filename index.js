@@ -13,3 +13,7 @@ const mainRoom = document.querySelector('.room');
 //     console.log(x, y)
 //     mainRoom.style.perspectiveOrigin = `${x}% ${y}%`;
 // })
+
+document.addEventListener('click', ()=>{
+    console.log('scroll')
+})
